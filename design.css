@@ -1,64 +1,61 @@
 body{
   display: block;
   margin: 0px;
+  font-family: sans-serif;
 }
 
-/*
-.flex-container {
-  display: flex;
-}*/
+header, footer, .hero{
+  background-color: #1f2937;
+}
 
+
+/*==================*/
 header {
   display: flex;
   flex: 1;
   justify-content: space-around;
   align-items: center;
-  background-color: #1f2937;
 }
 
 .header-logo-text{
   font-size: 24px;
   color: #f9faf8;
-  font-family: sans-serif;
 }
-
 
 a{
    margin-right: 16px;
    margin-left:16px;
    font-size: 18px;
    color: #e5e7eb;
-   font-family: sans-serif;
 }
+/*=================================================*/
 
+
+/*==================*/
 .hero{
    display: flex;
-   flex: 1;
-   /*justify-content: space-around;*/
-   justify-content: center;
+   justify-content: space-evenly;
    padding-top: 2cm;
    padding-bottom: 2cm;
-   margin-bottom: 1cm;
-   background-color: #1f2937;
 }
-
-.hero-p{
-   display: flex;
-   flex: 1;
-   flex-wrap: wrap;
-   margin-block-start: 2px;
-   font-size: 18px;
-   color: #e5e7eb;
-   font-family: sans-serif;
-}
+ .hero-text-area{
+   flex: 0.5 2 0%;
+ }
 
 .hero-main-text{
    font-size: 48px;
    color: #f9faf8;
    font-weight: bold;
+   margin-block-start: 0px;
    margin-block-end: 0px;
-   font-family: sans-serif;
 } 
+
+.hero-p{
+   flex-wrap: wrap;
+   margin-block-start: 2px;
+   font-size: 18px;
+   color: #e5e7eb;
+}
 
 button{
    color: #f9faf8;
@@ -70,19 +67,25 @@ button{
    font-size: 18px;
    font-weight: bold;
 }
+/*===========================================================================*/
 
+
+/*==================================*/
 .first-content{
    display: flex;
    flex: 1;
    flex-direction: column;
-   align-items: center
+   align-items: center;
+   margin-top: 0em;
+   margin-right: 4em;
+   margin-bottom: 4em;
+   margin-left: 4em;
 }
 
 .info-hearder-text{
    font-size: 36px;
    font-weight: bold;
    color: #1f2937;
-   font-family: sans-serif;
 }
 
 .box-group{
@@ -90,9 +93,24 @@ button{
    flex: 1;
 }
 
-.blank-box{
-  border: 2px solid #3882f6;
+.blank-box-group{
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   align-items: center;
 }
+
+.box-group .blank-box{
+  flex-direction: column;
+  border: 2px solid #3882f6;
+  border-radius: 8px;
+}
+
+ .blank-box-group small{
+    display: flex;
+	flex: 0.5 2 0%;
+}
+/*===========================================================================*/
 
 .second-content{
   display: flex;
@@ -107,7 +125,6 @@ button{
   font-size: 36px;
   font-weight: light;
   font-style: italic;
-  font-family: sans-serif;
   color: #1f2937;
 }
 
@@ -147,5 +164,4 @@ footer{
   justify-content: center;
   margin-top: 1em;
   color: #f9faf8;
-  background-color: #1f2937;
 }
