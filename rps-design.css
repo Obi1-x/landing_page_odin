@@ -1,0 +1,19 @@
+
+button{
+   color: #f9faf8;
+   background-color: #3882f6;
+   border-color: #3882f6;
+   padding-block: 6px;
+   padding-inline: 32px;
+   border-radius: 8px;
+   font-size: 18px;
+   font-weight: bold;
+   margin-block: 8px;
+}
+
+.whole{
+    display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+}
