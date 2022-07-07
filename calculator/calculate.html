@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="calc.jpg"> <!-- Use calculator icon -->
+  <link rel="stylesheet" href="calculate.css">
+
+  <!-- material.io 
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+ </head>
+
+ <body>
+  
+  <div class="cal-body">
+   <div class="cal-body-sub">
+    <input id="dis-entry" class="cal-display" type="text" value="0" disabled/>
+
+    <div class="cal-keys">
+
+     <div class="row-1">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="backspace()"><</button>
+      <button onclick="operating('/')" class="btn-operator">/</button>
+      <button onclick="operating('*')" class="btn-operator">*</button>
+     </div>
+
+     <div class="row-2">
+      <button onclick="displayEntry('7', 'num')">7</button>
+      <button onclick="displayEntry('8', 'num')">8</button>
+      <button onclick="displayEntry('9', 'num')">9</button>
+      <button onclick="operating('-')" class="btn-operator">-</button>
+     </div>
+
+     <div class="row-3">
+      <button onclick="displayEntry('4', 'num')">4</button>
+      <button onclick="displayEntry('5', 'num')">5</button>
+      <button onclick="displayEntry('6', 'num')">6</button>
+      <button onclick="operating('+')" class="btn-operator">+</button>
+     </div>
+
+     <div class="row-4-5-group">
+      <div class="row-4-5">
+       <div class="row-4">
+        <button onclick="displayEntry('1', 'num')">1</button>
+        <button onclick="displayEntry('2', 'num')">2</button>
+        <button onclick="displayEntry('3', 'num')">3</button>
+       </div>
+       <div class="row-5">
+        <button class="btn-zero" onclick="displayEntry('0', 'num')">0</button>
+        <button onclick="enterDecimal()">.</button>
+       </div>
+      </div><!--row-4-5-->
+      <button onclick="computeAll()" class="btn-equal btn-operator">=</button>
+     </div><!--row-4-5-group-->
+
+    </div>
+   </div>
+  </div>
+
+  <script src="calculate.js"></script>
+  <!-- <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+ </body>
+
+</html>

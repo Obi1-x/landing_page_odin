@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RPS</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./theIcon.png">
+  <link rel="stylesheet" href="rps-design.css">
+
+  <!-- material.io -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ </head>
+
+ <body>
+  <div class="whole">
+   <h1 class="main-head">Select rock, paper or scissors</h1>
+
+   <button type="submit"
+           onclick="startGame('rock')"
+           class="mdc-button foo-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Rock</span>
+   </button>
+
+   <button type="submit"
+           onclick="startGame('paper')"
+           class="mdc-button mdc-button--raised fi-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Paper</span>
+   </button>
+
+   <button type="submit"
+           onclick="startGame('scissors')"
+           class="mdc-button foo-button">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Scissors</span>
+   </button>
+
+   <!--<button type="submit" onclick="startGame('rock')">Rock</button> 
+   <button type="submit" onclick="startGame('paper')">Paper</button>
+   <button type="submit" onclick="startGame('scissors')">Scissor</button>-->
+
+   <h2 id="results">0 : 0</h2>
+   <h4 id="comp-choice">Computer's choice: </h4>
+   <h6 id="decision"></h6>
+  </div>
+ 
+ <script src="thengine.js"></script>
+ <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+ </body>
+
+</html>

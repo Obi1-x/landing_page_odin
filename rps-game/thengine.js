@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
   compChoice = document.getElementById("comp-choice");
   finalResult = document.getElementById("decision");
 
-  //mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+  mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+  mdc.ripple.MDCRipple.attachTo(document.querySelector('.fi-button'));
 });
 
 function computerPlay(){
